@@ -1,0 +1,50 @@
+{
+  "categories": [
+    {
+      "id": "court-booking",
+      "name": "Court Booking (90 min)",
+      "description": "Reserve a court for 90 minutes",
+      "image_url": "https://cdn.example.com/tennis-court.jpg",
+      "variants": [
+        {
+          "sku": "TENNIS-COURT-A",
+          "name": "Court A",
+          "description": "Hard court with lighting",
+          "price_in_cents": 3000
+        },
+        {
+          "sku": "TENNIS-COURT-B",
+          "name": "Court B",
+          "description": "Hard court with lighting",
+          "price_in_cents": 3000
+        },
+        {
+          "sku": "TENNIS-COURT-C",
+          "name": "Court C",
+          "description": "Clay court (premium)",
+          "price_in_cents": 3500
+        }
+      ]
+    },
+    {
+      "id": "lessons",
+      "name": "Lessons",
+      "description": "Professional coaching sessions",
+      "image_url": "https://cdn.example.com/tennis-lessons.jpg",
+      "variants": [
+        {
+          "sku": "TENNIS-PRIV-30",
+          "name": "30-min Private",
+          "description": "One-on-one with a coach",
+          "price_in_cents": 5000
+        },
+        {
+          "sku": "TENNIS-GROUP-60",
+          "name": "60-min Group",
+          "description": "Small group session (max 4 players)",
+          "price_in_cents": 2500
+        }
+      ]
+    }
+  ]
+}

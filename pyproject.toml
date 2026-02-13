@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "virtual-product-mock-server"
+version = "1.0.0"
+description = "FastAPI server implementing the external virtual product API contract for SD-3708"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "httpx>=0.25.0",
+]
+
+[project.scripts]
+virtual-product-mock-server = "main:app"
+
+[tool.uv]
+# Default Python version to use when running scripts
+python-version = "3.11"
+
+# Allow running scripts with the uv run command
+managed = true

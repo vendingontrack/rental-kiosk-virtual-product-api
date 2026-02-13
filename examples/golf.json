@@ -1,0 +1,30 @@
+{
+  "categories": [
+    {
+      "id": "green-fees",
+      "name": "Green Fees",
+      "description": "Access to championship golf course",
+      "image_url": "https://cdn.example.com/golf-green-fees.jpg",
+      "variants": [
+        {
+          "sku": "GOLF-18-WD",
+          "name": "18-Hole Weekday",
+          "description": "Valid Monday-Friday before 3pm",
+          "price_in_cents": 4500
+        },
+        {
+          "sku": "GOLF-9-WD",
+          "name": "9-Hole Weekday",
+          "description": "Valid Monday-Friday",
+          "price_in_cents": 2500
+        },
+        {
+          "sku": "GOLF-18-WE",
+          "name": "18-Hole Weekend",
+          "description": "Valid Saturday-Sunday",
+          "price_in_cents": 5500
+        }
+      ]
+    }
+  ]
+}
