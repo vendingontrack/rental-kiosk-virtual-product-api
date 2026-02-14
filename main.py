@@ -8,7 +8,7 @@ Configurable via environment variables:
     API_KEY           - Expected X-API-Key value (default: "test-api-key")
     DATA_FILE         - Path to JSON file with product data (default: examples/golf.json)
     PORT              - Server port (default: 8099)
-    RESPONSE_DELAY_MS - Artificial delay in ms on all responses (default: 0)
+    RESPONSE_DELAY_MS - Artificial delay in ms on responses except /ping (default: 0)
     FAIL_PURCHASE     - When "true", POST /purchase always returns failure
 
 Or via command-line argument:

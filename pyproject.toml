@@ -26,7 +26,7 @@ virtual-product-mock-server = "main:app"
 
 [tool.uv]
 # Default Python version to use when running scripts
-python-version = "3.11"
+python-version = "3.12"
 
 # Allow running scripts with the uv run command
 managed = true

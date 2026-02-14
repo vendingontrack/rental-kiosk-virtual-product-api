@@ -24,7 +24,7 @@ The server starts on port 8099 by default. The data file can be set via command-
 | `API_KEY`           | `test-api-key`       | Expected `X-API-Key` header value                        |
 | `DATA_FILE`         | `examples/golf.json` | Path to JSON file with product data                      |
 | `PORT`              | `8099`               | Server listen port                                       |
-| `RESPONSE_DELAY_MS` | `0`                  | Artificial delay (ms) on all responses (timeout testing) |
+| `RESPONSE_DELAY_MS` | `0`                  | Artificial delay (ms) on responses except `/ping` (timeout testing) |
 | `FAIL_PURCHASE`     | `false`              | When `true`, `POST /purchase` always returns failure     |
 
 ### Example Data Files

@@ -105,6 +105,12 @@ X-API-Key: <api-key>
           "name": "9-Hole Weekday",
           "description": "Valid Monday-Friday",
           "price_in_cents": 2500
+        },
+        {
+          "sku": "GOLF-18-WE",
+          "name": "18-Hole Weekend",
+          "description": "Valid Saturday-Sunday",
+          "price_in_cents": 5500
         }
       ]
     }
@@ -249,7 +255,7 @@ python main.py examples/tennis.json   # tennis preset
 | `API_KEY`           | `test-api-key`     | Expected `X-API-Key` value                      |
 | `DATA_FILE`         | `examples/golf.json` | Path to product data JSON file                |
 | `PORT`              | `8099`             | Listen port                                     |
-| `RESPONSE_DELAY_MS` | `0`                | Artificial delay in ms (for timeout testing)    |
+| `RESPONSE_DELAY_MS` | `0`                | Artificial delay in ms, excludes `/ping` (for timeout testing) |
 | `FAIL_PURCHASE`     | `false`            | When `true`, `POST /purchase` always fails      |
 
 ### Example Data Files
