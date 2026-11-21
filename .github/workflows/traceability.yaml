@@ -1,0 +1,22 @@
+name: Traceability
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+jobs:
+  traceability:
+    name: PR title check
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: Check PR title format
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          if ! echo "$PR_TITLE" | grep -qE '^([A-Z]+-[0-9]+[[:space:]:]+\S+.*|[Bb]ump(\([^)]+\):)?[[:space:]]+.*)$'; then
+            echo "PR title does not match required format."
+            echo "Expected: 'TICKET-123 Description' or 'Bump dependency' or 'Bump(deps): bump dependency'"
+            echo "Got: $PR_TITLE"
+            exit 1
+          fi
+          echo "PR title format is valid: $PR_TITLE"
